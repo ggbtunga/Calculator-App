@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.calc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.result{
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+button{
+    padding: 3px;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border:none;
+    border-radius: 30px;
+    background-color: #505050;
+    color:aliceblue;
+}
+button:hover{
+    cursor: pointer;
+}
+button:focus{
+    background-color: aliceblue;
+    color:#505050;
+}
+
+#zero{
+    width: 130px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.operations{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+.orange{
+    background-color: #FF9500;
+    color: aliceblue;
+    font-size: 30px;
+}
+.orange:focus{
+    background-color: aliceblue;
+    color: #FF9500;
+}
+.grey{
+    background-color: #d4d4d2;
+    color: black;
+}
+.grey{
+    background-color: aliceblue;
+    color: black;
+} 
+
