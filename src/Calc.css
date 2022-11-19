@@ -87,7 +87,7 @@ button:focus{
     background-color: #d4d4d2;
     color: black;
 }
-.grey{
+.grey:focus{
     background-color: aliceblue;
     color: black;
 } 
