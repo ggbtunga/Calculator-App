@@ -19,26 +19,28 @@ function Calculator(){
         }     
     }
     function setOptions(props){
-        switch(props){
-            case 'ac':
-                return setNum(0);
-            case 'module':
-                    if(num<0){
-                        setNum(Math.abs(num))
-                    }else{
-                        setNum(num*-1)
-                    };
-                    break
-            case 'percent':
-                setNum(num/100) 
-                break
-            default:
-                return num     
+        const number = parseFloat(num.replace(',','.'));
+        if(props === 'ac'){
+            setNum((number*0).toLocaleString('pt-BR'))
+            return num
+        }else if(props === 'module'){
+            if(num<0){
+                setNum((Math.abs(number)).toLocaleString('pt-BR'))
+            }else{
+                setNum((number*-1).toLocaleString('pt-BR'))
+            };
+            
+        }else if(props === 'percent'){
+            setNum((number/100).toLocaleString('pt-BR'))  
+            console.log(num)
+            
+        }else{
+            return num
         }
+
     }
     function setOperation(props){
-        let operatorSelect = props
-        setOperator(operatorSelect)
+        setOperator(props)
         setOldNum(num)
         setNum(0)
     }
@@ -48,17 +50,16 @@ function Calculator(){
 
         switch(operator){
             case 'divide':
-                setNum((oldNumber/number).toLocaleString('pt-BR'))
-                break;
+                return setNum((oldNumber/number).toLocaleString('pt-BR'))
+                
             case 'multi':
-                setNum((oldNumber*number).toLocaleString('pt-BR'))
-                break;
+                return setNum((oldNumber*number).toLocaleString('pt-BR'))
+                
             case 'sub':
-                setNum((oldNumber-number).toLocaleString('pt-BR'))
-                break;
+                 return setNum((oldNumber-number).toLocaleString('pt-BR'))
+                
             case 'plus':
-                setNum((oldNumber+number).toLocaleString('pt-BR'))
-                break
+                return setNum((oldNumber+number).toLocaleString('pt-BR'))  
             default:
                 return num;        
         }  

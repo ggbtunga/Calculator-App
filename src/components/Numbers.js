@@ -4,7 +4,6 @@ function Numbers(props){
 
 
     function inputNum(e){
-        console.log(e.target.value)
         props.newNum(e.target.value)
     }
 
