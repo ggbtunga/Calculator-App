@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-size: 1em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Heebo', sans-serif;
     background-color: rgb(148, 139, 128);
 }
 
