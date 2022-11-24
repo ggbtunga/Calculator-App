@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(148, 139, 128);
 }
 
 h1{
     margin-bottom: 0.5em;
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 3.1em;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414;
 }
 
 .container{
-    margin: 3em;
+    margin:3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,8 +45,9 @@ h1{
     display: flex;
     justify-content: flex-end;
     margin-right: 0.2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     font-size: 3em;
+    background-color: #1c1c1c;
 }
 
 button{
@@ -92,3 +97,6 @@ button:focus{
     color: black;
 } 
 
+.module,.numbers,.operations{
+    background-color:#1c1c1c;;
+}
