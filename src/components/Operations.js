@@ -15,7 +15,7 @@ function Operations(props){
         <div className="operations">
             <button className="orange" value={"divide"} onClick={operationsAction}>/</button>
             <button className="orange" value={"multi"} onClick={operationsAction}>x</button>
-            <button className="orange" value={"sub"} onClick={operationsAction}>-</button>
+            <button className="orange" value={"sub"} onClick={operationsAction}>—</button>
             <button className="orange" value={"plus"} onClick={operationsAction}>+</button>
             <button className="orange" value={"equal"} onClick={calculate}>=</button>
         </div>
